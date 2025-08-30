@@ -12,7 +12,7 @@ function App() {
     neutral: 0,
     bad: 0
   }
-  const [votes, setVotes] = useState(initialVotes);
+  const [votes, setVotes] = useState<Votes>(initialVotes);
 
   function handleVote(type: VoteType) {
     setVotes({
